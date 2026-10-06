@@ -1,0 +1,60 @@
+
+    <div class="container">
+        <!-- '..' regresa a la carpeta engrupamiento_de_proyectos -->
+        <a href="../index.html" class="btn-regresar">← Volver al Menú Principal</a>
+
+        <h1>Calificaciones Finales</h1>
+
+        <div class="filtros">
+            <button class="btn-filtro active" onclick="filtrar('todos', this)">Mostrar todos</button>
+            <button class="btn-filtro" onclick="filtrar('aprobados', this)">Aprobados (≥70)</button>
+            <button class="btn-filtro" onclick="filtrar('reprobados', this)">Reprobados (&lt;70)</button>
+        </div>
+
+        <table id="tabla-calificaciones">
+            <thead>
+                <tr>
+                    <th>Alumno</th>
+                    <th>Calificación final</th>
+                    <th>Estatus</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo-tabla">
+                <tr>
+                    <td>Ana</td>
+                    <td>50</td>
+                    <td><span class="badge reprobado">Reprobado</span></td>
+                </tr>
+                <tr>
+                    <td>Luis</td>
+                    <td>82</td>
+                    <td><span class="badge aprobado">Aprobado</span></td>
+                </tr>
+                <tr>
+                    <td>José</td>
+                    <td>74</td>
+                    <td><span class="badge aprobado">Aprobado</span></td>
+                </tr>
+                <tr>
+                    <td>Fernanda</td>
+                    <td>60</td>
+                    <td><span class="badge reprobado">Reprobado</span></td>
+                </tr>
+                <tr>
+                    <td>Sofía</td>
+                    <td>88</td>
+                    <td><span class="badge aprobado">Aprobado</span></td>
+                </tr>
+                <tr>
+                    <td>Miguel</td>
+                    <td>69</td>
+                    <td><span class="badge reprobado">Reprobado</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="scrip.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
